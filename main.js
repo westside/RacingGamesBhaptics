@@ -30,6 +30,7 @@ const start = (webContents) => {
       sendEvent,
       listenEvent
   )
+
   player.launch()
 }
 

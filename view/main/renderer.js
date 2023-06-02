@@ -24,6 +24,7 @@ const logInElement = (console, element) => {
     } else {
       element.innerHTML += `[${n}] ${message}<br />`;
     }
+    document.getElementById('logData').scrollTop = document.getElementById('logData').scrollHeight
   };
 };
 

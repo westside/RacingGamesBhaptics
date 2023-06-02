@@ -1,18 +1,19 @@
 {
   "name": "pcars2bhaptics",
   "version": "0.0.1",
-  "description": "",
+  "description": "Racing games bHaptics",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "dev" : "npm run development"
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.0.4"
+    "electron": "^16.2.8"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "binary-parser": "^2.2.1",
+    "dotenv": "^10.0.0",
+    "ws": "^8.13.0"
   }
 }
