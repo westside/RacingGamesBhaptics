@@ -133,6 +133,15 @@ p {
     margin-bottom: 50px;
 }
 
+.game-label {
+    display: inline-block;
+}
+
+.game-label p {
+    margin: 5px 5px;
+    text-align: center;
+}
+
 .game-selector input{
     padding-left: 20px;
     margin:0;padding:0;
@@ -156,7 +165,7 @@ p {
     background-repeat:no-repeat;
     display:inline-block;
     width:230px;
-    height:115px;
+    height:110px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
