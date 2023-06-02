@@ -5,7 +5,7 @@ body {
     background-color: #393E50;
     color: white;
     font-family: 'Montserrat', regular;
-    overflow-y: hidden;
+    overflow-y: scroll !important;
     overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ span {
 .line {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     margin-bottom: 10px;
 }
 
@@ -69,15 +69,11 @@ span {
     text-align: center;
 }
 
-.logs {
-    margin-bottom: 267px;
-}
-
 .log {
     background-color: #46506D;
     padding-top: 13px;
     overflow-y: scroll !important;
-    height: 340px;
+    height: 140px;
     width: 448px;
     padding-left: 20px;
 }
@@ -120,4 +116,56 @@ p {
     padding-bottom: 13px;
     padding-left: 124px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.games .title {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.game-selector {    
+    background-color: #46506D;
+    padding-top: 13px;
+    overflow-y: scroll !important;
+    height: 260px;
+    width: 737px;
+    margin-bottom: 50px;
+}
+
+.game-selector input{
+    padding-left: 20px;
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.pc1{background-image:url(../../img/pc1.jpg);}
+.pc2{background-image:url(../../img/pc2.jpg);}
+.pc3{background-image:url(../../img/pc3.jpg);}
+
+.game-selector input:active +.game-cc{opacity: .9;}
+.game-selector input:checked +.game-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.game-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:230px;
+    height:115px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.game-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
