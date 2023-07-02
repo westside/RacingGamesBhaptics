@@ -50,6 +50,13 @@ window.addEventListener('DOMContentLoaded', () => {
     ipcRenderer.send('close')
   });
 
+  const gameSelection = document.getElementsByName('racing-game');
+  gameSelection && gameSelection.forEach(element => element.addEventListener('click', () => {
+    if(element.checked){
+      ipcRenderer.send('selectGame', element.value);
+    }
+  }))
+
   ipcRenderer.on('tact-device-connecting', () => {
     console.log('Connecting…');
   });

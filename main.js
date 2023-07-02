@@ -4,10 +4,10 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
 const pcars = require('./lib/index')
+const SelectedGame = require('./lib/src/selectedGame')
 
 require('dotenv').config()
 const dev = (process.env.NODE_ENV === 'development')
-
 
 const start = (webContents) => {
   const sendEvent = (channel, args) => {
@@ -29,7 +29,7 @@ const start = (webContents) => {
     sendEvent,
     listenEvent
   )
-
+  
   player.launch()
 }
 
@@ -72,6 +72,10 @@ app.whenReady().then(() => {
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
+})
+
+ipcMain.on('selectGame', (evt, arg) => {
+  SelectedGame.setGameID(arg);
 })
 
 ipcMain.on('start', (evt, arg) => {
