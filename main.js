@@ -23,12 +23,11 @@ const start = (webContents) => {
       callable(arg, event)
     })
   }
-
   const player = new pcars.TactPlayer(
-      new pcars.BHapticsTactJsAdapter(),
-      new pcars.ConfigLoader(__dirname),
-      sendEvent,
-      listenEvent
+    new pcars.BHapticsTactJsAdapter(),
+    new pcars.ConfigLoader(__dirname),
+    sendEvent,
+    listenEvent
   )
 
   player.launch()
@@ -50,12 +49,15 @@ const createWindow = () => {
     frame:false,
     title:'haptic',
   })
+  
   mainWindow.loadFile('./view/main/index.html')
+  /*
       .then(() => {
         dev && mainWindow.webContents.openDevTools()
         start(mainWindow.webContents)
       })
       .catch((err) => console.error(err))
+  */
 }
 
 app.allowRendererProcessReuse = false;
@@ -71,6 +73,12 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 })
+
+ipcMain.on('start', (evt, arg) => {
+  if (BrowserWindow.getAllWindows().length > 0){
+    start(BrowserWindow.getAllWindows()[0]);
+  }
+});
 
 ipcMain.on('close', (evt, arg) => {
   app.quit();

@@ -40,6 +40,11 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText('#appversion', JSON.parse(data).version);
   });
 
+  const startElement = document.getElementById('start');
+  startElement && startElement.addEventListener('click', () => {
+    ipcRenderer.send('start')
+  });
+
   const closeElement = document.getElementById('close');
   closeElement && closeElement.addEventListener('click', () => {
     ipcRenderer.send('close')
