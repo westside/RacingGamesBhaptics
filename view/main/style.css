@@ -126,7 +126,7 @@ p {
 
 .game-selector {    
     background-color: #46506D;
-    padding-top: 13px;
+    padding: 0px 10px;
     overflow-y: scroll !important;
     height: 260px;
     width: 737px;
@@ -135,11 +135,14 @@ p {
 
 .game-label {
     display: inline-block;
+    margin: 0px 3px;
+    width: 32%;
+    vertical-align: top;
 }
 
 .game-label p {
-    margin: 5px 5px;
     text-align: center;
+    margin: 15px 10px;
 }
 
 .game-selector input{
@@ -152,6 +155,12 @@ p {
 .pc1{background-image:url(../../img/pc1.jpg);}
 .pc2{background-image:url(../../img/pc2.jpg);}
 .pc3{background-image:url(../../img/pc3.jpg);}
+.ac{background-image:url(../../img/ac.jpg);}
+.acc{background-image:url(../../img/acc.jpg);}
+.am2{background-image:url(../../img/am2.jpg);}
+.dr2{background-image:url(../../img/dr2.jpg);}
+.rf2{background-image:url(../../img/rf2.jpg);}
+.rrr{background-image:url(../../img/rrr.jpg);}
 
 .game-selector input:active +.game-cc{opacity: .9;}
 .game-selector input:checked +.game-cc{
