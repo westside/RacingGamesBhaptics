@@ -35,9 +35,9 @@ const start = (webContents) => {
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width:800,
+    width:825,
     height:650,
-    resizable:false,
+    resizable:true,
     minimizable : false,
     maximizable : false,
     autoHideMenuBar: true,
@@ -47,7 +47,7 @@ const createWindow = () => {
       enableRemoteModule: true,
     },
     frame:false,
-    title:'haptic',
+    title:'bHaptics Racing games',
   })
   
   mainWindow.loadFile('./view/main/index.html')
