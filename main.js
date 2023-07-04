@@ -5,6 +5,7 @@ const path = require('path')
 
 const pcars = require('./lib/index')
 const SelectedGame = require('./lib/src/selectedGame')
+const GameConfigManager = require('./lib/src/gameConfigManager')
 
 require('dotenv').config()
 const dev = (process.env.NODE_ENV === 'development')
@@ -76,6 +77,7 @@ app.on('window-all-closed', () => {
 
 ipcMain.on('selectGame', (evt, arg) => {
   SelectedGame.setGameID(arg);
+  GameConfigManager.checkConfigNeeded(arg);
 })
 
 ipcMain.on('start', (evt, arg) => {
