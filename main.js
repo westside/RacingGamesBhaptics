@@ -3,9 +3,9 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
-const pcars = require('./lib/index')
 const SelectedGame = require('./lib/src/selectedGame')
 const GameConfigManager = require('./lib/src/gameConfigManager')
+const ApiInit = require('./lib/src/apiInit')
 
 require('dotenv').config()
 const dev = (process.env.NODE_ENV === 'development')
@@ -24,14 +24,9 @@ const start = (webContents) => {
       callable(arg, event)
     })
   }
-  const player = new pcars.TactPlayer(
-    new pcars.BHapticsTactJsAdapter(),
-    new pcars.ConfigLoader(__dirname),
-    sendEvent,
-    listenEvent
-  )
-  
-  player.launch()
+
+  const api = new ApiInit(sendEvent, listenEvent);
+  api.init();
 }
 
 const createWindow = () => {
