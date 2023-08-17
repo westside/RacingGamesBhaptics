@@ -12,6 +12,7 @@
     "electron": "^16.2.8"
   },
   "dependencies": {
+    "@markusjx/shared_memory": "^1.0.1",
     "ac-remote-telemetry-client": "^0.1.1",
     "acc-node-wrapper": "^1.0.6",
     "binary-parser": "^2.2.1",
