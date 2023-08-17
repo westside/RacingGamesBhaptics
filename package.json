@@ -16,6 +16,7 @@
     "acc-node-wrapper": "^1.0.6",
     "binary-parser": "^2.2.1",
     "dotenv": "^10.0.0",
+    "numeral": "^2.0.6",
     "ws": "^8.13.0"
   }
 }
