@@ -1,15 +1,27 @@
 {
-  "name": "pcars2bhaptics",
+  "name": "racingbhaptics",
   "version": "0.0.1",
   "description": "Racing games bHaptics",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
-  "author": "",
+  "build": {
+    "appId": "com.electron.bHapticsRacingGames",
+    "nsis": {
+      "oneClick": "false",
+      "perMachine": "true"
+    },
+    "asar": "false"
+  },
+  "author": "Astien/Notblue",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.2.8"
+    "electron": "^16.2.8",
+    "electron-builder": "^24.6.3"
   },
   "dependencies": {
     "@markusjx/shared_memory": "^1.0.1",
