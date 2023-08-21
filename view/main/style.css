@@ -1,18 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+html {
+    border: 2px solid white;
+}
+
 body {
     margin:0;
-    background-color: #393E50;
+    background-color: #484848;
     color: white;
     font-family: 'Montserrat', regular;
     overflow-y: scroll !important;
     overflow-x: hidden;
+    margin-top: 145px;
+}
+
+.drag-window {
+    -webkit-app-region: drag;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
 }
 
 .header {
-    background-color: #2E323E;
+    background-color: #232323;
     padding-left: 25px;
-    -webkit-app-region: drag;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.header-title {
+    flex: 8;
 }
 
 .tit {
@@ -44,7 +70,7 @@ span {
 }
 
 .box {
-    background-color: #46506D;
+    background-color: #2f2f2f;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 20px;
@@ -70,7 +96,7 @@ span {
 }
 
 .log {
-    background-color: #46506D;
+    background-color: #2f2f2f;
     padding-top: 13px;
     overflow-y: scroll !important;
     height: 140px;
@@ -104,28 +130,48 @@ p {
 .outline {
     margin-right: 50px;
     margin-top: 55px;
-    margin-left: 50px;
-    background-color: #393E50 !important;
+    background-color: #2b2d33 !important;
     border: white solid 3px;
+    cursor: pointer;
 }
 
 .btnFoot {
     background-color: #29A2FF;
     padding-top: 13px;
-    padding-right: 127px;
+    padding-right: 50px;
     padding-bottom: 13px;
-    padding-left: 124px;
+    padding-left: 50px;
     text-align: center;
     margin-bottom: 20px;
+    flex: 1;
+}
+
+.games-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.games-header a {
+    flex: 3;
 }
 
 .games .title {
     margin-bottom: 15px;
-    display: block;
+    display: inline-block;
+}
+.game-cfg {
+    flex: 1;
+    background-color: #2b2d33 !important;
+    border: white solid 3px;
+    padding: 9px 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
 }
 
 .game-selector {    
-    background-color: #46506D;
+    background-color: #2f2f2f;
     padding: 0px 10px;
     overflow-y: scroll !important;
     height: 345px;

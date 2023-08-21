@@ -7,15 +7,31 @@
     <script src="./renderer.js"></script>
   </head>
   <body id="body">
+    <div class="drag-window"></div>
     <div class="header">
-      <p class="tit">Racing Games bHaptics</p>
-      <p class="ver">Version <span id="appversion"></span></p>
+      <div class="header-title">
+        <p class="tit">Racing Games bHaptics</p>
+        <p class="ver">Version <span id="appversion"></span></p>
+      </div>
+      
+      <div class="btnFoot outline" id="start">
+        <a >Start</a>
+      </div>
+
+      <div class="btnFoot outline" id="close">
+        <a >Close</a>
+      </div>
     </div>
 
     <div class="main" id="main">
 
       <div class="games">
-        <a class="title">Select a game</a>
+        <div class="games-header">
+          <a class="title">Select a game</a>
+          <div class="game-cfg" id="game-cfg">
+            <a >Game configuration</a>
+          </div>
+        </div>
         <div class="game-selector" id="gameData">
           <div class="game-label">
             <input id="ac" type="radio" name="racing-game" value="ac" />
@@ -79,15 +95,6 @@
         </div>
       </div>
 
-    </div>
-
-    <div class="btnFoot outline" id="start">
-      <a >Start</a>
-    </div>
-
-    <div class="btnFoot outline" id="close">
-      <a >Close</a>
-    </div>
     </div>
   </body>
 </html>

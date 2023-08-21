@@ -32,7 +32,7 @@ const start = (webContents) => {
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width:825,
-    height:650,
+    height:675,
     resizable:true,
     minimizable : false,
     maximizable : false,
