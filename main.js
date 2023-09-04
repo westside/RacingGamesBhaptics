@@ -72,11 +72,20 @@ app.on('window-all-closed', () => {
 
 ipcMain.on('selectGame', (evt, arg) => {
   SelectedGame.setGameID(arg);
-  GameConfigManager.checkConfigNeeded(arg);
-})
+});
+
+ipcMain.on('gameConfig', (evt, arg) => {
+  const check = GameConfigManager.checkConfigNeeded();
+  if(!check)
+  {
+    BrowserWindow.getAllWindows()[0].loadFile('./view/gameconfig/'+ SelectedGame.getGameId() + ".html");
+    SelectedGame.setGameID('');
+  }
+});
 
 ipcMain.on('start', (evt, arg) => {
-  if (BrowserWindow.getAllWindows().length > 0){
+  const check = GameConfigManager.checkConfigNeeded();
+  if (!check && BrowserWindow.getAllWindows().length > 0){
     start(BrowserWindow.getAllWindows()[0]);
   }
 });

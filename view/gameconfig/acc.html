@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Racing Games bHaptics</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./renderer.js"></script>
+    </head>
+    <body id="body">        
+        <div class="drag-window"></div>
+        <div class="header">
+            <div class="header-title">
+            <p class="tit">Racing Games bHaptics</p>
+            <p class="ver">Version <span id="appversion"></span></p>
+            </div>
+            
+            <div class="btnFoot outline" id="back">
+            <a >Back</a>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <img id="game-img" src="../../img/acc.jpg" />
+            <div id="instructions">
+                <p>
+                    <b>To enable bHaptics, please start Assetto Corsa Competizione once, and edit your Documents\config\broadcasting.json to </b>
+                    <br/>
+                    {<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"updListenerPort": 9000,<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"connectionPassword": "asd",<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"commandPassword": ""<br/>
+                    }<br/>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- 685px 910px -->

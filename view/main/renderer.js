@@ -49,6 +49,11 @@ window.addEventListener('DOMContentLoaded', () => {
   closeElement && closeElement.addEventListener('click', () => {
     ipcRenderer.send('close')
   });
+  
+  const gameConfigElement = document.getElementById('game-cfg');
+  gameConfigElement && gameConfigElement.addEventListener('click', () => {
+    ipcRenderer.send('gameConfig')
+  });
 
   const gameSelection = document.getElementsByName('racing-game');
   gameSelection && gameSelection.forEach(element => element.addEventListener('click', () => {

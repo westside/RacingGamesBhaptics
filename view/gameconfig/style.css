@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+html {
+    border: 2px solid white;
+}
+
+body {
+    margin:0;
+    background-color: #484848;
+    color: white;
+    font-family: 'Montserrat', regular;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    margin-top: 145px;
+}
+
+.drag-window {
+    -webkit-app-region: drag;
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    background-color: #232323;
+    padding-left: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.header-title {
+    flex: 8;
+}
+
+.tit {
+    margin:0;
+    padding-top: 14px;
+    font-size: 21px;
+}
+
+.ver {
+    padding-top: 4px;
+    margin: 0;
+    padding-bottom: 14px;
+    font-size: 18px;
+}
+
+span {
+    font-size: 15px;
+}
+
+.main, .txt, .foot {
+    margin:25px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin-bottom: 10px;
+}
+
+.box {
+    background-color: #2f2f2f;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    max-width: 449px;
+    width: 100%;
+}
+
+#appversion {
+    color: #d8ff29;
+}
+
+.title {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin-right: 11px;
+}
+
+.outline {
+    margin-right: 50px;
+    margin-top: 55px;
+    background-color: #2b2d33 !important;
+    border: white solid 3px;
+    cursor: pointer;
+}
+
+.btnFoot {
+    background-color: #29A2FF;
+    padding-top: 13px;
+    padding-right: 50px;
+    padding-bottom: 13px;
+    padding-left: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+#main {
+    text-align: center;
+}
+
+#game-img {
+    width: 60%;
+}
+
+#instructions {
+    text-align: left;
+}
