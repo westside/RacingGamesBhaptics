@@ -22,7 +22,27 @@
             <img id="game-img" src="../../img/dr2.jpg" />
             <div id="instructions">
                 <p>
-                    
+                    Edit the file located at:
+                </p>
+                <p>
+                    Documents\My Games\DiRT Rally 2.0\hardwaresettings\hardware_settings_config.xml
+                </p>
+                <p style="font-size: 16px !important;">
+                    ( The documents folder is in your windows user folder, usually looks like this "C:\Users\yourname\Documents" )
+                </p>
+                <p>
+                    Copy paste the following sections in the "motion_platform" section
+                </p>
+                <xmp>
+    <motion_platform>
+        <dbox enabled="true" />
+        <udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" />
+        <custom_udp enabled="false" filename="packet_data.xml" ip="127.0.0.1" port="20777" delay="1" />
+        <fanatec enabled="true" pedalVibrationScale="1.0" wheelVibrationScale="1.0" ledTrueForGearsFalseForSpeed="true" />
+    </motion_platform>
+                </xmp>
+                <p>
+                    Save the modifications.
                 </p>
             </div>
         </div>

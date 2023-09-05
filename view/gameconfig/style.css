@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 html {
-    border: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 body {
@@ -12,6 +14,10 @@ body {
     overflow-y: scroll !important;
     overflow-x: hidden;
     margin-top: 145px;
+}
+
+xmp {
+    overflow: auto;
 }
 
 .drag-window {
@@ -125,8 +131,28 @@ p {
 
 #game-img {
     width: 60%;
+    margin-bottom: 25px;
+}
+
+.game-img {
+    width: 80%;
+    margin-bottom: 25px;
+}
+.game-img2 {
+    width: 60%;
+    margin-bottom: 25px;
 }
 
 #instructions {
     text-align: left;
+}
+
+#rf2link1 {
+    color: #29A2FF;
+    cursor: pointer;
+}
+
+#rf2link2 {
+    color: #29A2FF;
+    cursor: pointer;
 }
