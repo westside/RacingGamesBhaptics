@@ -19,7 +19,21 @@ Currently :
 - Gear (gearup/down)
 - GForce (Intensity relative to GForce, you can feel the force on right/left back/forward)
 
+## How to use
+
+Download the setup exe available here : <a href="https://github.com/Astienth/RacingGamesBhaptics/releases">Setup download</a><br/>
+Install and launch the application<br/>
+Launch the bhaptic player<br/>
 
 
+### 1. Select a game
 
+<img src="https://i.ibb.co/RPNsKhV/race1.jpg" alt="race1" border="0" />
 
+### 2. Check for game specific configuration
+
+<img src="https://i.ibb.co/tLJwPQF/race2.jpg" alt="race2" border="0" />
+
+### 3. Click on the Start button and make sure bhaptics players status is green
+
+<img src="https://i.ibb.co/9btKsfT/race3.jpg" alt="race3" border="0" />
