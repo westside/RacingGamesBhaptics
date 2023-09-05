@@ -19,10 +19,6 @@ Currently :
 - Gear (gearup/down)
 - GForce (Intensity relative to GForce, you can feel the force on right/left back/forward)
 
-next :
-- Crash
-- missing tyre
-
 
 
 
