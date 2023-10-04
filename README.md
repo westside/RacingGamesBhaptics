@@ -5,6 +5,8 @@
 RacingGamesBhaptics is based on @NotBlue Project-Cars-Bhaptics.
 It is an API based project, allowing you to use bhaptics products with many racing games on PC
 
+☕ If you wanna show some support you can buy me a coffee : https://www.buymeacoffee.com/astienth4
+
 ## Compatibility
 
 Currently :
