@@ -5,25 +5,20 @@
 RacingGamesBhaptics is based on @NotBlue Project-Cars-Bhaptics.
 It is an API based project, allowing you to use bhaptics products with many racing games on PC
 
-☕ If you wanna show some support you can buy me a coffee : https://www.buymeacoffee.com/astienth4
+☕  If you wanna show some support you can buy me a coffee : https://www.buymeacoffee.com/astienth4
 
 ## Compatibility
 
-Currently :
+bHaptics devices supported:
 - X40
 - X16
 - Arms
-
-## Event Feedback
-
-- Engine (when you throttle)
-- GearWheel (movement of the gear, when you are on grass it's stronger for exemple)
-- Gear (gearup/down)
-- GForce (Intensity relative to GForce, you can feel the force on right/left back/forward)
+- Feet (Thanks to Nickbond from bHaptics discord)
+- Tactvisor (Thanks to Nickbond from bHaptics discord)
 
 ## How to use
 
-Download the setup exe available here : <a href="https://github.com/Astienth/RacingGamesBhaptics/releases">Setup download</a><br/>
+Download the setup exe available below <a href="https://github.com/Astienth/RacingGamesBhaptics/releases/download/0.0.1/racingbhaptics.Setup.0.0.1.exe">"racingbhaptics.Setup.0.0.1.exe"</a> <br/>
 Install and launch the application<br/>
 Launch the bhaptic player<br/>
 
@@ -39,3 +34,4 @@ Launch the bhaptic player<br/>
 ### 3. Click on the Start button and make sure bhaptics players status is green
 
 <img src="https://i.ibb.co/9btKsfT/race3.jpg" alt="race3" border="0" />
+
